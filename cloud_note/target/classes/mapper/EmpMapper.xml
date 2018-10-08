@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Dept.xml 在com.tarena.entity 包中  -->  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ 
+ <mapper namespace="ecjtu.cloud_note.dao.EmpDao">
+ 	<!-- MYSQL:数据库自动生成主键,获取主键值放入
+ 	参数emp对象的id属性中 -->
+ 	<insert id="save" parameterType="ecjtu.cloud_note.entity.Emp"
+ 		useGeneratedKeys="true" keyProperty="id">
+ 		INSERT INTO emp(name,age) VALUES(#{name},#{age})
+ 	</insert>
+ 	
+ </mapper>
+ 
+ 
+ 
+ 
+ 
